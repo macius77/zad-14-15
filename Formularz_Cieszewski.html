@@ -1,68 +1,121 @@
+
 <!DOCTYPE html>
 <html lang="pl-PL">
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Formularz_Cieszewski</title>
-    </head>
-    <body style="background-color: rgb(250, 185, 6);">
-       Tutaj bedzie formularz
-        <A HREF="index.html"> Wróć </A>
-        <center><h1> Formularz o programowaniu i szkole</h1></center>
-        <form enctype="text/plain" action="mailto:mkryniew@wp.pl" subject="formularz_dane" method="Post">
-         <TABLE>
-        <TR height="100">
-         <TD width="500"> 
-         <b>Imię</b> &nbsp 
-        &nbsp 
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input name="imie" size="22" required> 
-         <br><br>
-         <b>Drugie imię</b>&nbsp &nbsp<input name="drugie" size="22"> 
-         <br><br>
-         <b>Nazwisko </b> &nbsp &nbsp &nbsp <input name="nazwisko" size="22" required> 
-         <br><br>
-         <b>Pseudonim</b>&nbsp &nbsp &nbsp<input name="login" size="22"><nobr> 
-        <br> 
-         </TD> 
-         <TD width="300" >
-            <b>Podaj środek transportu ktorym sie dostajesz do szkoły</b> 
-            <center>
-                <select name="" id="">
-                    <option value="autobus">autobus</option>
-                    <option value="samochod">samochod</option>
-                    <option value="piechota">piechota</option>
-                    <option value="motor">motor</option>
-                    <option value="tramwaj">tramwaj</option>
-                    <option value="helikopter">helikopter</option>
-                    <option value="samolot">samolot</option>
-                </select>
-            </center>
-        </TD> 
-         </TR>
-        <TR height="200">
-         <TD width="500">
-            <b>Czy lubisz programować?</b>
-            <br>
-            <input type="checkbox" name="tak"> <b>tak</b>
-            <br>
-            <input type="checkbox" name="nie"> <b>nie</b>
-            <br>
-            <input type="checkbox" name="nieUmiem"> <b>nie umiem</b>
-             </TD> 
-         <TD> 
-            <b>wbierz datę</b> <input type="date"> <br>
-            <b>wybierz czas</b> <input type="time"> <br>
-            <b>wybierz kolor</b> <input type="color"> <br>
-         </TD> 
-         </TR>
-        <TR height="400">
-         <td></td>   
-         <TD> 
-            <input type="reset">
-            <input type="submit">
-        </TD> 
-         </TR>
-         </TABLE>
-        </form>
-    </body>
-</html>
+<head>
+<meta charset="utf-8">
+<title> ZADANIE FORMULARZ </title>
+</head>
+<body bgcolor="#C0C0C0">
+<center><h1> <font color="#008000" > <B> FORMULARZ WYBORU ZAJĘĆ SPORTOWYCH</B></font></h1></center>
+<form enctype="text/plain" action="mailto:mkryniew@ids.gda.pl" subject="Cieszewski Maciej" method="Post">
+<TABLE>
+<TR height="100">
+<TD width="500">
+<b>Imię</b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input name="imie" size="22">
+<br><br>
+<b>Nazwisko </b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input name="nazwisko" size="22">
+<br><br>
+<b>Miejsce zamieszkania</b>&nbsp &nbsp &nbsp<input name="miejscowość" size="22"><nobr> <br>
+<br>
+<b>Wiek </b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input name="wiek" size="22">
+<br><br>
+</TD>
+
+<TD width="500"> <B>Czy brałeś udział w zajęciach sportowych organizowanych przez nasz klub?</B>
+<br><br>
+<input type="checkbox" name="tak" value="k"> TAK
+<br><br>
+<input type="checkbox" name="nie" value="m"> NIE
+
+<br><br><br>
+<nobr>Jeżeli zaznaczyłeś TAK to podaj w jakich zajęciach brałeś udział.<br>
+ Maks: 100 znaków</nobr>
+<br><br>
+<input name="tak" size="25" maxlength="100">
+</TD>
+
+<TD>podaj czas &nbsp &nbsp &nbsp &nbsp<input type="time"><br>
+podaj datę &nbsp &nbsp &nbsp&nbsp &nbsp<input type="date"> <br>
+ <br> </TD>
+</TR>
+
+<TR height="200">
+<TD><center><font size="5" color="#008000"><b>Wybierz rodzaj zajęć</b></font></center><br>
+<center> <select>
+<option value="basen">BASEN</option>
+<option value="karate">KARATE</option>
+<option value="rower">ROWER</option>
+<option value="biegi">BIEGI</option>
+<option value="rolki">ROLKI</option>
+</select> </center> </TD>
+ 
+<TD width="300" >
+<center><font size="5" color="#008000"><b>Wybierz stopień zaawansowania</b></font></center><br>
+<center> <select>
+<option value="podstawowy">PODSTAWOWY</option>
+<option value="średnio zaawansowany">ŚREDNIO ZAAWANSOWANY</option>
+<option value="zaawansowany">ZAAWANSOWANY</option>
+</select> </center></TD>
+
+<TD width="300" >
+<center><font size="5" color="#008000"><b>W jakiej miejscowości chcesz uczestniczyć w zajęciach</b></font></center><br>
+<center> <select>
+<option value="Gdańsk">GDAŃSK</option>
+<option value="Gdynia">GDYNIA</option>
+<option value="Sopot">SOPOT</option>
+<option value="Rumia">RUMIA</option>
+</select> </center>
+</TD>
+
+<TR height="200">
+
+<TD><nobr><B>Czy chciałbyś uczestniczyć w innych zajęciach niż wymienione?</B></nobr>
+<br><br>
+<input type="radio" name="pyt2" value="tak"> Tak
+<br><br>
+<input type="radio" name="pyt2" value="nie"> Nie
+<br><br>
+<input type="radio" name="pyt2" value="tak"> Nie wiem <br> <br> 
+ W polu poniżej wypisz inne zajęcia jakie by Cię zainteresowały<br>
+ <textarea cols="50" rows="4"></textarea> </TD>
+ 
+
+<TD><nobr><B>Czy posiadasz kartę pływacką?<br> (w przypadku nie wybierania zajęć na basenie zaznacz "nie dotyczy")</B></nobr>
+<br><br>
+<input type="radio" name="pyt3" value="tak"> Tak
+<br><br>
+<input type="radio" name="pyt3" value="nie"> Nie
+<br><br>
+<input type="radio" name="pyt3" value="tak"> Chciałbym wyrobić podczas zajęć
+<br><br>
+<input type="radio" name="pyt3" value="nie"> Nie jestem zainteresowany
+<br><br>
+<input type="radio" name="pyt3" value="nie dotyczy" checked> Nie dotyczy <br> <br> <b> 
+
+<TD width="500"><b> Wybieram turnus: </b>
+<br><br>
+<input type="checkbox" name="pyt4" value="1"> 05-12.07.2025
+<br><br>
+<input type="checkbox" name="pyt4" value="2"> 13-20.07.2025
+<br><br>
+<input type="checkbox" name="pyt4" value="3"> 21-28.07.2025
+<br><br>
+<input type="checkbox" name="pyt4" value="4"> 01-08.08.2025
+<br><br><br>
+Jeżeli interesuje Cię inny termin, podaj jaki
+
+<input name="inna" size="25" maxlength="100">
+</TD>
+</TR>
+
+
+<TR height="100">
+
+<TD><nobr><input type="reset" value="WYCZYŚĆ" style="height:80px; width:150px"> </TD>
+<TD> <input type="submit" value="WYŚLIJ" style="height:80px; width:150px"></TD>
+</TR>
+</TABLE>
+</form>
+</body>
